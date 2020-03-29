@@ -49,9 +49,29 @@ font-family: 'Libre Franklin', sans-serif;*/
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.mainCon {
+  margin-top: 0px;
+  width: auto;
+  min-height: 750px;
+}
+.advert {
+  margin-top: 15%;
+  background-color: #213780;
+  color: white;
+}
+.storyAd {
+  background-color: #3253BF;
+  color: white;
+}
 .footHeader {
   display: flex;
   flex-direction: row;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
 }
 }
 /*MOBILE END*/
@@ -95,6 +115,21 @@ font-family: 'Libre Franklin', sans-serif;*/
     padding-left: 7px;
     padding-right: 7px;
   }
+  .mainCon {
+    width: auto;
+    min-height: 900px;
+  }
+  .advert {
+    margin-top: 25%;
+    background-color: #213780;
+    color: white;
+  }
+  .background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+  }
   .footHeader {
     height: 154px;
     width: auto;
@@ -107,9 +142,19 @@ font-family: 'Libre Franklin', sans-serif;*/
     flex-direction: row;
     align-items: flex-start;
   }
+  .background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
   }
-
+  .advert {
+    width: auto;
+    height: 150px;
+    background-color: 213780;
+    color: white;
+  }
 }
+
 /*@media only screen and (min-width:1024px) and (max-width:1030px) {
   .header {
     width: auto;
