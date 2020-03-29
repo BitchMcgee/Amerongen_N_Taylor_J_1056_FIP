@@ -384,3 +384,129 @@ font-family: 'Libre Franklin', sans-serif;*/
 
 }
 /*HISTORY END*/
+/*INFO START*/
+@media only screen and (max-width:640px) {
+.box
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.beerPic img
+{
+  width: 600px;
+
+}
+.right
+{
+  width: 50%
+
+
+}
+.brandBlurb
+{
+}
+.topBot img
+{
+  width: 900px;
+}
+}
+@media only screen and (min-width:641px) and (max-width:1920px) {
+.box
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.beerPic img
+{
+  width: 600px;
+
+}
+.right
+{
+  width: 50%
+
+
+}
+.brandBlurb
+{
+}
+.topBot img
+{
+  width: 900px;
+}
+}
+/*INFO END*/
+/* COLLECTION START*/
+.molson {
+  /*width: 16%;*/
+  width:200px;
+  height: 200px;
+  /*border: solid 2px black;*/
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.molson img {
+  margin-bottom: 5px;
+}
+
+.molson h2{
+}
+
+.grid {
+	width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns:  250px 250px;
+  grid-row: 900px 900px 900px;
+	/* could use auto to take a column fluid */
+	/*creating gutters essential */
+	grid-gap: 200px 20px ;
+  margin-bottom: 80px;
+}
+
+
+@media only screen and (min-width:641px) and (max-width:1020px) {
+  .grid {
+  	width: 1200px;
+  	margin: 0 auto;
+  	display: grid;
+  	grid-template-columns:  350px 350px;
+    grid-row: 900px 900px 900px;
+  	/* could use auto to take a column fluid */
+  	/*creating gutters essential */
+  	grid-gap: 200px 20px ;
+    margin-bottom: 80px;
+  }
+}
+
+
+@media only screen and (min-width:1021px) and (max-width:1920px){
+.grid {
+	width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 400px 400px 400px;
+  grid-row: 400px 400px;
+	/* could use auto to take a column fluid */
+	/*creating gutters essential */
+	grid-gap: 20px;
+}
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.description {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+/* COLLECTION END*/
