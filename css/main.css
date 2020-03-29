@@ -154,87 +154,233 @@ font-family: 'Libre Franklin', sans-serif;*/
     color: white;
   }
 }
-
-/*@media only screen and (min-width:1024px) and (max-width:1030px) {
-  .header {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    color: blue;
-  }
-  .logo
-  {
-    height: auto;
-    min-height: 154px;
-    min-width: 300px;
-    max-width: 50%;
-    display: flex;
-    justify-content: flex-start;
-
-
-  }
-  .mainNav {
-  margin-bottom:0px;
-  padding-right: 5px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: row;
-
-  }
-  .nav {
-    background-color: #DFE2E6;
-    border: solid 1px #7c7d80;
-    height: 20px;
-    display: flex;
-    /*flex-direction: column;*/
-    margin-bottom: 0px;
-    justify-content: flex-end;
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-  }
-
-}
-/*TABLET END*/
-/*MONITOR START*/
-/*@media only screen and (min-width:1024px) and (max-width:1920px) {
-.header {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.logo
-{
-  display: flex;
-  max-height:154px;
-  max-width: 300px;
-}
-.mainNav {
-margin-bottom:0px;
-padding-right: 5px;
-display: flex;
-justify-content: flex-end;
-flex-direction: row;
-
-}
-.nav {
-  background-color: #DFE2E6;
-  border: solid 1px #7c7d80;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0px;
-  justify-content: flex-end;
-  padding-left: 7px;
-  padding-right: 7px;
-}
-}*/
-
-
 /*MONITOR END*/
 /*INDEX END*/
+/*HISTORY START*/
+@media only screen and (max-width:640px) {
+  .pageBox
+  {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(images/bottleBlack.svg);
+  }
+  .contentL
+  {
+    width: 33%;
+    width: 30%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .history
+  {
+    border: solid 1px black;
+
+  }
+  .brewery
+  {
+    background-color: #488CBC;
+  }
+  .railroad
+  {
+    margin-top: 15px;
+    background-color: #295A95;
+  }
+  .export
+  {
+    margin-top: 15px;
+    background-color: #488CBC;
+  }
+  .clock
+  {
+    margin-top: 15px;
+    background-color: #295A95;
+  }
+  .contentM
+  {
+    width: auto;
+  }
+  #BGBot
+  {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contentM img
+  {
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hexJump
+  {
+    width:150px;
+    height: 150px;
+    /*background-image: url(images/molsonHex.png);*/
+    /*background-color: #013559;*/
+    position: relative;
+    animation-name: hexJump;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-play-state: running;
+
+  }
+  .hexJump img
+  {
+    width: 150px;
+    height: 150px;
+    justify-content: space-between;
+  }
+  @keyframes hexJump {
+    0% {top: 0px;}
+    /*50% {top: 50%;}*/
+    100% {top: 600px;}
+  }
+  .contentR
+  {
+    width: 33%;
+    text-align: center;
+    display: block;
+    float: right;
+    margin-right: 0px;
+  }
+  .bank
+  {
+    margin-top: 15px;
+    background-color: #488CBC;
+  }
+  .hospital
+  {
+    background-color: #295A95;
+  }
+  .return
+  {
+    background-color: #295A95;
+    margin-top: 15px;
+  }
+  .canadian
+  {
+    margin-top: 15px;
+    background-color: #488CBC;
+  }
+}
+@media only screen and (min-width:641px) and (max-width:1920px) {
+  .pageBox
+  {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(images/bottleBlack.svg);
+  }
+  .contentL
+  {
+    width: 33%;
+    width: 30%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .history
+  {
+    border: solid 1px black;
+
+  }
+  .brewery
+  {
+    background-color: #488CBC;
+  }
+  .railroad
+  {
+    margin-top: 15px;
+    background-color: #295A95;
+  }
+  .export
+  {
+    margin-top: 15px;
+    background-color: #488CBC;
+  }
+  .clock
+  {
+    margin-top: 15px;
+    background-color: #295A95;
+  }
+  .contentM
+  {
+  }
+  #BGBot
+  {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contentM img
+  {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  .hexJump
+  {
+    width:150px;
+    height: 150px;
+    /*background-image: url(images/molsonHex.png);*/
+    /*background-color: #013559;*/
+    position: relative;
+    animation-name: hexJump;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-play-state: running;
+  }
+  .hexJump img
+  {
+    width: 150px;
+    height: 150px;
+  }
+  @keyframes hexJump {
+    0% {top: 0px;}
+    /*50% {top: 50%;}*/
+    100% {top: 600px;}
+  }
+  .contentR
+  {
+    width: 33%;
+    text-align: center;
+    display: block;
+    float: right;
+    margin-right: 0px;
+  }
+  .bank
+  {
+    margin-top: 15px;
+    background-color: #488CBC;
+  }
+  .hospital
+  {
+    background-color: #295A95;
+  }
+  .return
+  {
+    background-color: #295A95;
+    margin-top: 15px;
+  }
+  .canadian
+  {
+    margin-top: 15px;
+    background-color: #488CBC;
+  }
+
+}
+/*HISTORY END*/
