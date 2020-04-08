@@ -4,6 +4,7 @@ body {
 font-family: 'Libre Franklin', sans-serif;*/
 }
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<background-image: url("images/bottleBlack.svg")>
 .hidden
 {
   visibility: hidden !important;
@@ -142,11 +143,6 @@ font-family: 'Libre Franklin', sans-serif;*/
     flex-direction: row;
     align-items: flex-start;
   }
-  .background {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-  }
   .advert {
     width: auto;
     height: 150px;
@@ -158,6 +154,9 @@ font-family: 'Libre Franklin', sans-serif;*/
 /*INDEX END*/
 /*HISTORY START*/
 @media only screen and (max-width:640px) {
+  .historyIntro h2 {
+
+  }
   .pageBox
   {
     width: 100%;
@@ -177,6 +176,8 @@ font-family: 'Libre Franklin', sans-serif;*/
   .history
   {
     border: solid 1px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
   }
   .brewery
@@ -385,6 +386,63 @@ font-family: 'Libre Franklin', sans-serif;*/
 }
 /*HISTORY END*/
 /*INFO START*/
+.tabs {
+  border-radius: 1px solid #cccccc;
+  display: flex;
+}
+
+.tabs__sidebar {
+  width: 125px;
+  flex-shrink: 0;
+  background: #cccccc;
+}
+
+.tabs__button {
+  display: block;
+  padding: 10px;
+  background: #eeeeee;
+  border: none;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+}
+
+.tabs--button:active {
+  background: #dddddd;
+}
+
+.tabs__button:not(:last-of-type) {
+  border-bottom: 1px solid #cccccc;
+}
+
+.tabs__button--active {
+  font-weight: bold;
+  border-right: 4px solid #2B5B96;
+  background: #dddddd;
+}
+
+.tabs__content {
+padding: 15px;
+font-size: 1.2rem;
+display: none;
+}
+
+.tabs__content--active {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabs__content > first-child {
+  margin-top: 0;
+}
+
+
+
+.bio {
+  display: block;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width:640px) {
 .box
 {
