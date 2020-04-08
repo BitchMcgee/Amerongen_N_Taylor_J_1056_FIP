@@ -22,22 +22,34 @@
 			<li class="nav button"><a href="#">Info</a></li>
 		</nav>
 	</div>
-	<div class="box">
-		<div class="beerPic"><img src="images/canadian.jpg" alt="Molson Canadian can"></div>
-		<div class="right">
-			<div class="brandBlurb"><h2>Get to know us a little better!</h2><p>It's important to us that our customers know what we're about.
-				Using Canadian water and barley to honour our Northern heritage we are proud to be Canadian!<br> <br>Sustainability is a priority to our Board,
-				embedded into our Company’s strategy and integrated into the expectations of our senior and other leaders.<br><br>At Molson putting the
-				safety and enjoyment of our consumers first is how we create relationships that last a lifetime. Our 2025 goals will ensure that we continue
-				to work collectively to sustain consumer confidence that beer has a proper place in society and fits within a well-balanced lifestyle.
-				By 2025, we aim to implement impactful programs to prevent underage drinking and drunk driving in every market where we sell beer.
-				<br><br>At Molson putting the safety and enjoyment of our consumers first is how we create relationships that last a lifetime.
-				 Our 2025 goals will ensure that we continue to work collectively to sustain consumer confidence that beer has a proper place in society
-				 and fits within a well-balanced lifestyle. By 2025, we aim to implement impactful programs to prevent underage drinking and drunk driving in
-				 every market where we sell beer.</p></div>
-			<div class="topBot"><img src="images/canTop.jpg" alt="top of can"></div>
+	<div class="tabs">
+		<div class="tabs__sidebar">
+			<button class="tabs__button" data-for-tab="1">Lead Designer</button>
+			<button class="tabs__button" data-for-tab="2">Lead Developer</button>
+		<!--	<button class="tabs__button" data-for-tab="3">Tab #3</button> -->
+		</div>
+		<div class="tabs__content" data-tab="1">
+			<img src="images/sonny.jpg"alt="Image of Nicholas" width="220px">
+			<div class="bio">
+					<h2>Nic Amerongen <br> Role: Designer</h2><br>
+							<p>Born as a result of a freak  accident during a fight between a jurassic Megalodon and a retired fax machine,<br>
+								 Nicholas lives a relatively standard life in FuckTheBusSystem, Ontario. He decided to take up a life of cleaning <br>
+								 up the streets after he was ambushed in the library one day by 16 fighter jets. For several decades Nicholas served<br>
+				 to keep the Decepticons from allowing Apple to take over the world with their shitty technology.
+				SHARK </p>
+			</div>
+		</div>
+		<div class="tabs__content" data-tab="2">
+			<img src="images/josh.jpg"alt="Image of Josh" width="220px">
+			<div class="bio">
+				<h2>Josh Taylor <br> Role: Developer</h2><br>
+				<p>I’m Josh Taylor. I graduated with a certificate in Mechanical techniques for CNC in 2016 from Fanshawe (St. Thomas Elgin <br>
+				Regional Campus) and started working in 3D design and fabrication on commission while studying there. I designed artistic<br>
+				and functional parts for the college, as well as other clients such as the STEGH (St Thomas Elgin General Hospital) Foundation. </p>
+			</div>
 		</div>
 	</div>
+
 	<div class="footHeader">
 		<img class="logo" src="images/FIPlogo.jpg" alt="Molson Logo">
 		<nav class="botNav">
@@ -48,6 +60,37 @@
 			<li class="nav button"><a href="#">Info</a></li>
 		</nav>
 	</div>
-	<script src="js/main.js"></script>
+	<script src="js/main.js">
+	function setupTabs () {
+		document.querySelectorAll(".tabs__button").forEach(button => {
+			button.addEventListener("click", () => {
+				const sideBar = button.parentElement;
+				const tabsContainer = sideBar.parentElement;
+				const tabNumber = button.dataset.forTab;
+				const tabToActvate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`);
+
+				sideBar.querySelectorAll(".tabs__button").forEach(button => {
+					button.classList.remove("tabs__button--active");
+				});
+				tabsContainer.querySelectorAll(".tabs__content").forEach(tab=> {
+					tab.classList.remove("tabs__content--active");
+				});
+
+					button.classList.add("tabs__button--active");
+					tabToActvate.classList.add("tabs__content--active");
+			});
+		});
+	}
+
+
+	document.addEventListener("DOMContentLoaded", () => {
+		setupTabs();
+
+		document.querySelectorAll(".tabs").forEach(tabsContainer => {
+			tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
+		});
+	});
+
+	</script>
 </body>
 </html>
