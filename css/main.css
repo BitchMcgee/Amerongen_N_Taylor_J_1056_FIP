@@ -63,6 +63,7 @@ font-family: 'Libre Franklin', sans-serif;*/
 .storyAd {
   background-color: #3253BF;
   color: white;
+	text-align: center;
 }
 .footHeader {
   display: flex;
@@ -73,6 +74,12 @@ font-family: 'Libre Franklin', sans-serif;*/
   justify-content: center;
   position: absolute;
   z-index: -1;
+}
+.mainBG {
+	margin-top: 40px;
+}
+.conLink {
+	text-align: center;
 }
 }
 /*MOBILE END*/
@@ -124,6 +131,7 @@ font-family: 'Libre Franklin', sans-serif;*/
     margin-top: 25%;
     background-color: #213780;
     color: white;
+		text-align: center;
   }
   .background {
     display: flex;
@@ -145,10 +153,22 @@ font-family: 'Libre Franklin', sans-serif;*/
   }
   .advert {
     width: auto;
-    height: 150px;
+    height: 100px;
     background-color: 213780;
     color: white;
   }
+	.storyAd {
+	  background-color: #3253BF;
+	  color: white;
+		text-align: center;
+	}
+	.mainBG {
+		margin-top: 40px;
+	}
+	.conLink {
+		text-align: center;
+		color: white;
+	}
 }
 /*MONITOR END*/
 /*INDEX END*/
