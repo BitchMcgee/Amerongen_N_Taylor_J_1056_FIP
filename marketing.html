@@ -24,11 +24,63 @@
 	</div>
 	<img class="background" src="images/bottleBlack.svg" alt="Bottle Sillhouette">
 
-	<video class="market" width="960" height="540" controls>
-		 <source src="images/ad.mp4" type="video/mp4">
-	</video>
+	<div class="row">
+<div class="column">
+  <img src="images\adThumbnail.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+</div>
+<div class="column">
+  <img src="images\clockThumbnail.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+</div>
+</div>
 
-	<img class="market" src="images/environmentalAd.jpg" alt="Environmental Ad">
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+    <section class="lightbox">
+
+  <video controls src="images\ad.mp4" style="width:100%"></video>
+
+</section>
+  </div>
+
+
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+    <section class="lightbox">
+
+  <video controls style="width:100%" src="images\FIP_infomercial.mp4"></video>
+
+</section>
+
+  </div>
+
+
+  <!-- Next/previous controls -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Caption text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail image controls -->
+  <div class="column">
+    <img class="demo" src="images\adWide.jpg" onclick="currentSlide(1)" alt="Merger Ad">
+  </div>
+
+  <div class="column">
+    <img class="demo" src="images\clockWide.jpg" onclick="currentSlide(2)" alt="Clock Ad">
+  </div>
+
+
+</div>
+</div>
 
 
 	<div class="footHeader">
